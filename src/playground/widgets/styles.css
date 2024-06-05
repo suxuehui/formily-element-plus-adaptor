@@ -1,0 +1,20 @@
+.dn-actions-widget {
+  display: flex;
+  align-items: center;
+}
+.dn-actions-widget .btn-save {
+  margin-left: 10px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+}
+.logo-container a {
+  height: 28px;
+  width: 138px;
+}
+.logo-container .logo {
+  height: 100%;
+  max-width: 100%;
+}

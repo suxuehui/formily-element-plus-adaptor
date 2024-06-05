@@ -1,0 +1,14 @@
+/** 添加样式解决一些错位问题 kelvin0926 20221221 */
+.cm-editor {
+  height: 100%;
+}
+.dn-viewport {
+  padding-right: 5px;
+  padding-top: 5px;
+}
+.dn-array-cards {
+  background-color: #fff;
+}
+.dn-array-cards .formily-ui-array-base-addition {
+  flex: 1;
+}

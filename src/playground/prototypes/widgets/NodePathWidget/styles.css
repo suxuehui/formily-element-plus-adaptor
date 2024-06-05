@@ -1,0 +1,10 @@
+.dn-node-path {
+  padding: 4px 10px !important;
+  border-bottom: 1px solid #f0f0f0;
+}
+.dn-node-path .dn-icon {
+  font-size: 11px;
+}
+.dn-node-path a {
+  font-size: 12px;
+}

@@ -1,0 +1,5 @@
+.dn-designer-tools button,
+.dn-view-tools button {
+  padding: 0 7px;
+  border-radius: 0;
+}
