@@ -1,20 +1,20 @@
 import { transformToSchema } from '@designable/formily-transformer'
 import { createForm, Form as IForm } from '@formily/core'
 import { Form } from '@cps'
-import * as UIFramework from '@cps'
+import * as UILib from '@cps'
 import { connect, createSchemaField, mapProps } from '@formily/vue'
 import { shallowRef, defineComponent, computed } from 'vue'
 import { Card, Text, Rate, Slider, TreeSelect } from '@pg/renderer'
 
 const { SchemaField } = createSchemaField({
   components: {
-    ...UIFramework,
+    ...UILib,
     Card,
     Text,
     Rate,
     Slider,
     TreeSelect,
-    Password: connect(UIFramework.Input, mapProps({}, (args) => ({ ...args, type: 'password', showPassword: true })))
+    Password: connect(UILib.Input, mapProps({}, (args) => ({ ...args, type: 'password', showPassword: true })))
   },
 })
 

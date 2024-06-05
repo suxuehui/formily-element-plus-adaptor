@@ -1,5 +1,5 @@
 import { observer } from '@formily/reactive-vue'
-import { useTree, useWorkbench } from '../hooks'
+import {usePrefix, useTree, useWorkbench} from '../hooks'
 import { Viewport } from '../containers'
 import { defineComponent } from 'vue'
 import { ITreeNode } from '@designable/core'
@@ -15,6 +15,8 @@ const ViewPanelComponent = defineComponent({
   setup(props, { slots }) {
     const workbenchRef = useWorkbench()
     const treeRef = useTree()
+
+    const prefix = usePrefix('view-panel-widget')
 
     return () => {
       if (workbenchRef.value.type !== props.type) return null
@@ -36,6 +38,7 @@ const ViewPanelComponent = defineComponent({
 
       return (
         <div
+          class={prefix.value}
           style={{
             overflow: props.scrollable ? 'overlay' : 'hidden',
             height: '100%',

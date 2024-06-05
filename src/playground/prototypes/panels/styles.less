@@ -217,9 +217,11 @@
   &-item {
     position: relative;
   }
-
-  button[disabled] {
-    pointer-events: none !important;
+  button {
+    outline: none !important;
+    &[disabled] {
+      pointer-events: none !important;
+    }
   }
 }
 

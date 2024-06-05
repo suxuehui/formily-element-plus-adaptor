@@ -5,12 +5,6 @@ import cls from 'classnames'
 import './styles.less'
 import { defineComponent, ref } from 'vue'
 
-// export interface ICollapseItemProps {
-//   className?: string
-//   style?: React.CSSProperties
-//   defaultExpand?: boolean
-// }
-
 export const CollapseItem = observer(
   defineComponent({
     props: ['defaultExpand'],

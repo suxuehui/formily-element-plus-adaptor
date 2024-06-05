@@ -41,7 +41,7 @@ const usePanels = (collapseField: GeneralField, schema: Schema) => {
     const field = collapseField.query(collapseField.address.concat(name)).take()
     if (field?.display === 'none' || field?.display === 'hidden') return
 
-    if (schema['x-component']?.indexOf('FormCollapse.Item') > -1) {
+    if (schema['x-component']?.indexOf('FormCollapse.CollapsePanel') > -1) {
       panels.push({
         name,
         props: {
